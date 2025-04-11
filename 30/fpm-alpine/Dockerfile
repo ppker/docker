@@ -55,7 +55,7 @@ RUN set -ex; \
     pecl install APCu-5.1.24; \
     pecl install memcached-3.3.0; \
     pecl install redis-6.2.0; \
-    pecl install imagick-3.7.0; \
+    pecl install imagick-3.8.0; \
     \
     docker-php-ext-enable \
         apcu \
@@ -102,7 +102,7 @@ RUN { \
 VOLUME /var/www/html
 
 
-ENV NEXTCLOUD_VERSION 30.0.8
+ENV NEXTCLOUD_VERSION 30.0.9
 
 RUN set -ex; \
     apk add --no-cache --virtual .fetch-deps \

@@ -64,7 +64,7 @@ RUN set -ex; \
     pecl install APCu-5.1.24; \
     pecl install memcached-3.3.0; \
     pecl install redis-6.2.0; \
-    pecl install imagick-3.7.0; \
+    pecl install imagick-3.8.0; \
     \
     docker-php-ext-enable \
         apcu \
@@ -122,7 +122,7 @@ RUN a2enmod headers rewrite remoteip ;\
     } > /etc/apache2/conf-available/remoteip.conf;\
     a2enconf remoteip
 
-ENV NEXTCLOUD_VERSION 31.0.2
+ENV NEXTCLOUD_VERSION 31.0.3
 
 RUN set -ex; \
     fetchDeps=" \
